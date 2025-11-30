@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""a"""
+"""Module to update topics of school documents in MongoDB."""
 
 
 def update_topics(mongo_collection, name, topics):
