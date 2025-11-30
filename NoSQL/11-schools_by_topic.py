@@ -16,5 +16,5 @@ def schools_by_topic(mongo_collection, topic):
         list: A list of dictionaries (documents) matching the topic.
     """
 
-    search = {"topic": topic}
-    return mongo_collection.find(search)
+    search = {"topics": topic}
+    return list(mongo_collection.find(search))
