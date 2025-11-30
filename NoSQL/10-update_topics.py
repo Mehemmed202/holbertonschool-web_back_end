@@ -3,10 +3,14 @@
 
 
 def update_topics(mongo_collection, name, topics):
-    """aaaaaaaa
+    """
+    changes all topics of a school document based on the name.
 
-
-    aaaaa"""
+    args:
+        mongo_collection: the pymongo collection object.
+        name (str): the name of the school to update.
+        topics (list of str): the list of topics approached in the school.
+    """
 
     mongo_collection.update_many(
     {"name": name},
